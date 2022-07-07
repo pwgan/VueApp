@@ -1,0 +1,181 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/common/index/Home",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/common/login/Login",
+			"style": {
+				"backgroundColorTop": "#5677FC",
+				"backgroundColorBottom": "#ffffff",
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+
+		}, {
+			"path": "pages/common/task/Index",
+			"style": {
+				"backgroundColorTop": "#5677FC",
+				"backgroundColorBottom": "#ffffff",
+				"navigationBarTitleText": "测试",
+				"app-plus": {
+					"bounce": "vertical"
+				}
+			}
+
+		}
+	    ,{
+            "path" : "pages/OfficialSealAskProcess/Launch",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/common/SelectOnePeople",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/common/SelectAnyPeople",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/common/SelectPeople",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/LaunchComponent",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/ApproveComponent",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/OfficialSealAskProcess/Approve",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/LauncherInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/ApproveRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/common/FileUpload",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "文件上传组件",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Approve/WaitApproveProcess",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "待我审批",
+                "enablePullDownRefresh": false,
+				"titleNView": {
+					"buttons": [{
+						"fontSize": "20px",
+						"text": "\ue607",
+						"fontSrc": "/static/iconfont/iconfont.ttf"
+					}]
+				}
+            }
+        }
+        ,{
+            "path" : "pages/Approve/ApproveShared",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "查询",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+		}
+	},
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#5677FC",
+		"navigationBarTitleText": "Thor UI",
+		"navigationBarTextStyle": "white",
+		"backgroundColor": "#fafafa",
+		"backgroundColorTop": "#fafafa",
+		"backgroundColorBottom": "#fafafa"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#5677FC",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/common/index/Home",
+				"text": "code",
+				"iconPath": "static/images/tabbar/code_gray.png",
+				"selectedIconPath": "static/images/tabbar/code_active.png"
+			},
+			{
+				"pagePath": "pages/common/task/Index",
+				"text": "extend",
+				"iconPath": "static/images/tabbar/extend_gray.png",
+				"selectedIconPath": "static/images/tabbar/extend_active.png"
+			}
+			// {
+			// 	"pagePath": "pages/common/index/Home",
+			// 	"text": "thor",
+			// 	"iconPath": "static/images/tabbar/thor_gray.png",
+			// 	"selectedIconPath": "static/images/tabbar/thor_active.png"
+			// }
+		]
+	}
+}
